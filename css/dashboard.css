@@ -1,0 +1,189 @@
+body
+{
+	font-family: 'Droid Sans', sans-serif;
+	min-height: 100vh;
+	background-color: #ffe373;
+}
+.navBar
+{
+	background-color: #fc0;
+	border-bottom: #e8bd10 solid 1px;
+}
+.navBar .row h3
+{
+	font-family: 'Roboto', sans-serif;
+}
+.imgBarTop
+{
+	padding: 0.3%;
+}
+.imgBarTop .col-sm-3
+{
+	padding-right: 10px;
+}
+.imgBarTop img
+{
+	width: 92%;
+	height: 95%;
+}
+.navBar .col-sm-9 a
+{
+	color: black;
+}
+.navBar .col-sm-9 a:focus,.navBar .col-sm-9 a:active,.navBar .col-sm-9 a:hover
+{
+	text-decoration: none;
+
+}
+.loginMenu
+{
+	text-align: right;
+	padding-top: 1%;
+}
+.loginBarB #logoutID
+{
+	display: inline-block;
+	margin-right: 3%;
+}
+#notID
+{
+	display: inline-block;
+}
+a{
+	color: black;
+}
+/*--------------------TABS-------------------*/
+#exTab3
+{
+	min-height: 63vh;
+}
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #d0a600;
+  padding : 5px 15px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+{
+	background-color: #e8bd10
+}
+.nav-pills li a
+{
+	font-size: 1.2vw;
+}
+.nav-pills li .active
+{
+	border-bottom: solid 1px black;
+}
+/*------1st TAB--------*/
+.LHead,.RHead
+{
+	text-decoration: underline;
+	font-size: 1.1vw;
+}
+label
+{
+	font-weight: normal;
+}
+.ruleHead
+{
+	text-decoration: underline;
+}
+#nextButtonID,#subButtonID,#finishButtonID
+{
+	float: right;
+	width: 60px;
+	height: 30px;
+	color: black;
+	font-size: 1.1vw;
+	font-weight: bold;
+	background-color: auto;
+	margin-right: 5%;
+	border:solid 1px black;
+	border-radius:8px;
+}
+#prevButtonID
+{
+	float: right;
+	width: 70px;
+	height: 30px;
+	color: black;
+	font-size: 1.1vw;
+	font-weight: bold;
+	background-color: auto;
+	margin-right: 2%;
+	border:solid 1px black;
+	border-radius:8px;
+}
+#nextButtonID:hover,#prevButtonID:hover,#subButtonID:hover,#finishButtonID:hover
+{
+	box-shadow:  0px 0px 10px black;
+}
+#nextButtonID:active,#nextButtonID:focus,#prevButtonID:active,#prevButtonID:focus,
+#finishButtonID:active,#finishButtonID:focus
+{
+	outline: none;
+}
+
+/*----------2nd panel------*/
+#titleA, #titleB, #titleC
+{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.2vw;
+}
+
+/*--------3rd panel -----------*/
+.priorityForm .row label
+{
+	margin-left: 2%;
+	font-weight: normal;
+	font-size: 1vw;
+}
+.priorityForm .row select
+{
+	width: auto;
+	height: auto;
+	padding: 1%;
+	margin: 1%;
+	border:solid 1px black;
+	color: black;
+}
+#subButtonID
+{
+	margin-right: 2%;
+}
+/*------------4th panel----------*/
+.resultTitle
+{
+	text-decoration: underline;
+	margin-bottom: 4%;
+}
+.resultBody h5
+{
+	font-size: 1.2vw;
+	font-weight: bold;
+}
+#underLine
+{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/*-------END-----------------*/
+.bodyPart2
+{
+	margin-top: 2%;
+	background-color: #fc0;
+}
+.bodyPart2 .col-sm-6
+{
+	text-align: center;
+}

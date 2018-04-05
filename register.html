@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Institute of Engineering and Technology</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>	
+	<div class="container-fluid">
+		<div class="row navBar">
+			<div class="row imgBarTop col-sm-5">
+				<div class="col-sm-3">
+					<a href="index.html">
+						<img src="images/logo.png">
+					</a>
+				</div>
+				<div class="col-sm-9">
+					<a href="index.php">
+						<h3>Institute Of Engineering And Technology, Lucknow</h3>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-5 loginMenu">
+				<div class=" loginBarA">
+					<form method="post" action="verifyUser.php">
+						<div class="colsm4">
+							<input type="email" name="EmailID" placeholder="Email">
+						</div>
+						<div class="colsm4">
+							<input type="password" name="PasswordInput" placeholder="Password">
+						</div>
+						<div class="colsm4">
+							<button type="submit" onclick="#">Login</button>
+						</div>
+					</form>
+				</div>
+				<div class="row loginBarB">
+					<div class="colsm6">
+						<div id="forgotText" data-toggle="modal" data-target="#forgotPassModal">
+							<a href="dashboard.html">Forgot Password?</a>
+						</div>
+					</div>
+					<div class="colsm6">
+						<div id="signUpText" data-toggle="modal" data-target="#signUpModal">
+							<a href="register.html">New User? Sign Up</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-8">
+		<div class="registerMenu">
+			<div class="titleReg">
+				<h3>New User Registration</h3>
+				<h4>Please Enter Your Details</h4>
+			</div>
+			<div class="formReg">
+				<form method="POST" action="adduser.php">
+					<div class="formWhole">
+					<h4>About You</h4>
+					<hr>
+					<div class="FormLeftSide">
+						<div id="fname">First Name</div>
+						<div id="lname">Last Name</div>
+						<div id="DOB">Date of Birth</div>
+						<div id="emailID">Email</div>
+						<div id="Password1">Password</div>
+						<div id="Password2">Confirm Password</div>
+						<div id="mobileNo">Mobile No.</div>
+					</div>
+					<div class="FormRightSide">
+						<input type="name" name="fname" id="fname1" required="true" placeholder="First Name">
+						<input type="name" name="lname" required="true" id="lname1" placeholder="Last Name"> 
+						<input type="date" name="dob" id="dob1" required="true" onkeydown="return false">
+						<input type="email" name="emailID" id="email1" required="true" placeholder="Email-ID">					
+						<input type="password" name="password" id="password11" required="true" placeholder="Password">					
+						<input type="password" name="passwordc" id="password21" required="true" placeholder="Confirm Password">					
+						<input type="text" name="mobileNo" id="mobileNo1" required="true" maxlength="10" placeholder="Contact No." onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+						
+					</div>
+					</div>
+
+					<h4>Address</h4>
+					<hr>
+					<div class="FormLeftSide">
+					<div id="Addr1">House/ Street No.</div>
+					<div id="Addr2">Locality</div>
+					<div id="Addr3">Landmark</div>
+					<div id="Addr5">State</div>
+					<div id="Addr5">City</div>
+					<div id="Addr6">Pincode</div>
+					</div>
+					
+					<div class="FormRightSide">	
+					<input type="text" name="House1" id="Addr11" required="true" placeholder="House/Street Number">
+					<input type="text" name="House2" id="Addr21" required="true" placeholder="Locality">
+					<input type="text" name="House3" id="Addr31" required="true" placeholder="Landmark">
+					<input type="text" name="House4" id="Addr41" required="true" placeholder="State">
+					<input type="text" name="House5" id="Addr51" required="true" placeholder="City">
+					<input type="text" name="House6" id="Addr61" required="true" maxlength="6" placeholder="Pincode" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+					</div>
+					
+					<h4>Education Qualification</h4>
+					<hr>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Qualification</th>
+								<th>School/ College</th>
+								<th>Passing Year</th>
+								<th>Percentage</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>High School/ 10th Equivalent</td>
+								<td>
+									<input type="text" name="SchoolName" id="SchoolID" placeholder="Name of Institution" required="true">
+								</td>
+								<td>
+									<input type="text" maxlenght="4" name="year10" id="10year" placeholder="Passing Year" onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required="true">
+								</td>								
+								<td>
+									<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57 && event.charCode == '.' ' maxlength="4" name="marks10" id="10marks" placeholder="Percentage" required="true">
+								</td>								
+							</tr>
+							<tr>
+								<td>10+2/ 12th Equivalent</td>
+								<td>
+									<input type="text" name="SchoolName1" id="School1ID" placeholder="Name of Institution" required="true"> 
+								</td>
+								<td>
+									<input type="text" maxlenght="4" name="year12" id="10year" placeholder="Passing Year" onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required="true">
+								</td>
+								<td>
+									<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57 && event.charCode == '.' ' maxlength="4" name="marks12" id="12marks" placeholder="Percentage" required="true">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="JEEBody">
+						<div class="JEERoll">
+							<h5>JEE Roll Number</h5>
+						</div>
+						<div class="JEERollInput">
+							<input type="text" name="jeeroll" id="jeeRoll" required="true" maxlength="8" placeholder="JEE Roll Number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+						</div>
+						<br><br>
+						<div class="JEETitle">
+							<h5>JEE Mains Score</h5>
+						</div>
+						<div class="JEEInput">
+							<input type="text" name="jeescore" id="jeeScore" required="true" maxlength="3" placeholder="JEE Score" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> /360
+						</div>
+					</div>
+					<hr>
+					<div class="rulesBox">
+						<div class="checkBody">
+							<input type="checkbox" name="tick" id="termsID">
+						</div>
+						<div class="checkText">
+							<p>I have read and agree to all the <a href="#">Terms and Regulations</a> issued.</p>
+						</div>
+					</div>
+					<button id="formSubmit" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+		</div>
+		<div class="col-sm-4 AboutUsBlog">
+			<div class="AboutRightHeader">
+				<h3>About Us</h3>
+			</div>
+			<div class="about1">
+				<h3>
+					Our Mission
+				</h3>
+				<strong>Institute of Engineering and Technology</strong> is an institution of higher learning dedicated to global enrichment and meeting the evolving needs of our diverse communities.
+				<br>
+
+				With an emphasis on innovative programs, dynamic curriculum and general education skills, we are committed to being a pioneer in the field of career-focused education.
+				<br>
+			</div>
+			<div class="about2">
+				<h3>Pledge of Public Accountability</h3>
+				We empower our students, faculty and staff to exceed the expectations of society through academic excellence, community enrichment and service to the public good.
+				<br>
+
+				As an institution of higher learning with a history of success dating back to 1900, <strong> Insitute of Engineering and Technology</strong> understands the level of commitment required to earn a degree. 
+				<br>
+				To help you make an informed decision about where to earn your degree, <strong> Insitute of Engineering and Technology</strong> signed a Pledge of Accountability to provide our prospective, current, and former students with relevant, accurate, and straightforward information.
+			</div>
+		</div>
+	</div>
+		<div class="container-fluid "><div class="row bodyPart2">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<h4>Project Made by Pragyan Dalmia</h4>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -1,0 +1,463 @@
+<?php
+	session_start();
+	if(!isset($_SESSION["user_id"]))
+	{
+        header("Location:login_signup.php");
+        exit;
+    }
+    else
+    {	/*this code is for all categories div*/
+    	include 'config.php';
+    	$sql = "SELECT * FROM categories ";
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Institute of Engineering and Technology</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+</head>
+<body>	
+	<div class="container-fluid">
+		<div class="row navBar">
+			<div class="row imgBarTop col-sm-5">
+				<div class="col-sm-3">
+					<a href="index.html">
+						<img src="images/logo.png">
+					</a>
+				</div>
+				<div class="col-sm-9">
+					<a href="index.html">
+						<h3>Institute Of Engineering And Technology, Lucknow</h3>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-5 loginMenu">
+				<div class=" loginBarA">
+					<h4>Welcome, Abahadb BAhasd</h4>
+				</div>
+				<div class="row loginBarB">
+					<div class="colsm6">
+						<h5 id="notID">Not You?</h5>
+						<h5 id="logoutID"><a href="index.html"><strong>Log Out</strong></a></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h2>Dashboard </h2>
+		</div>
+			<div id="exTab3" class="container">	
+			<ul  class="nav nav-pills">
+						<li class="active">
+			        <a  href="#1b" data-toggle="tab">Account Details</a>
+						</li>
+						<li><a href="#2b" data-toggle="tab">Cut-Off Criteria</a>
+						</li>
+						<li><a href="#3b" data-toggle="tab">Counselling Procedure</a>
+						</li>
+						<li><a href="#4b" data-toggle="tab">Counselling Result</a>
+						</li>
+			  		<li><a href="#5b" data-toggle="tab">Allotment Details</a>
+						</li>
+					</ul>
+
+						<div class="tab-content clearfix">
+						  <div class="tab-pane active" id="1b">
+			          			<div class="userBody row">
+			          				<div class="userL col-sm-6">
+			          					<div class="LHead">
+			          						<h4>About You</h4>
+			          					</div>
+			          					<div class="LBody row">
+			          						<div class="col-sm-6">
+			          							<label>JEE Roll Number</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>62920111</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>JEE Score </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>245</label> /360
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Name </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Avhasd hasd </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Date Of Birth </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>03-04-1997</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Reg Email-ID </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>abc@xyz.com </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Contact Number </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>6262612398</label>
+			          						</div>
+			          					</div>
+			          				</div>
+			          				<div class="userR col-sm-6">
+			          					<div class="RHead">
+			          						<h4>Address</h4>
+			          					</div>
+			          					<div class="LBody row">
+			          						<div class="col-sm-6">
+			          							<label>House/ Street No.</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>M - 1/52</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Locality</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Avjhdsv bsdf </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Landmark</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>AFbdu  asd gi</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>State </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Rajasthan</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>City </label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Jaipur</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>Pincode</label>
+			          						</div>
+			          						<div class="col-sm-6">
+			          							<label>303007</label>
+			          						</div>
+			          					</div>
+			          				</div>
+			          			</div>
+			          			<hr>
+			          			<div class="row rulesAndReg">
+			          				<div class="ruleHead col-sm-10">
+			          					<h5>Please read the <strong>Rules</strong> before proceeding to the Counselling Procedure :</h5>
+			          				</div>
+			          				<div class="col-sm-10">
+			          					<ul>
+			          						<li>Choice Filling is compulsory for allotment of seat. Candidate will not be considered otherwise.</li>
+			          						<li>Once the period of choice filling is over, choice filled  bu candidate will be used for allotment of seat. </li>
+			          						<li>Candidate should fill as many choices as possible to ensure that they have better chances of allotment of seat.</li>
+			          						<li>After choice filling is over, the choices made by student cannot be changed.</li>
+			          						<li>The seat will be alloted to the student based on merit score. JEE Mains Score will be taken into consideration.</li>
+			          					</ul>
+			          				</div>
+			          			</div>
+			          			<div class="row">
+			          				<div class="nextButton">
+			          					<button type="submit" id="nextButtonID">Next</button>
+			          				</div>
+			          			</div>
+							</div>
+							<div class="tab-pane" id="2b">
+			          			<div class="row">
+			          				<div class="cutHead col-sm-10">
+			          					<h4>Cut-Off List :</h4>
+			          					<hr>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label id="titleA">Branch/ Stream</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label id="titleB">JEE Score</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label id="titleC">Seats Remaining</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>Computer Science</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label> > 325</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>50</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>Information Technology</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label> 300 - 325 </label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>50</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>Electronics and Communications</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label> 290 - 325 </label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>50</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>Electrical and Electronics</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label> 250 - 300 </label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>50</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>Mechanical Engineering</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label> 220 - 300 </label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>50</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>Civil Engineering</label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label> 200 - 300 </label>
+			          				</div>
+			          				<div class="col-sm-4">
+			          					<label>50</label>
+			          				</div>
+			          			</div>
+			          			<div class="nextButton">
+			          				<button type="submit" id="nextButtonID">Next</button>
+			          			</div>
+			          			<div class="prevButton">
+			          				<button type="submit" id="prevButtonID">Previous</button>
+			          			</div>
+							</div>
+			        		<div class="tab-pane" id="3b">
+			          			<div class="row">
+			          				<div class="counHeader col-sm-10">
+			          					<h4><strong>Choice Filling</strong> (Please fill 4 choices) :</h4>
+			          					<hr>
+			          				</div>
+			          				<form class="priorityForm" action="#" method="POST">
+			          					<div class="row">
+			          					<div class="col-sm-6">
+			          						<label>Priority 1 :</label>
+			          					</div>
+			          					<div class="col-sm-6">
+			          						<select name="choice1">
+											    <option value="Computer Science">Computer Science</option>
+											    <option value="Information Technology">Information Technology</option>
+											    <option value="Electronics and Communications">Electronics and Communications</option>
+											    <option value="Electrical and Electronics">Electrical and Electronics</option>
+											    <option value="Mechanical Engineering">Mechanical Engineering</option>
+											    <option value="Civil Engineering">Civil Engineering</option>
+											</select>
+			          					</div>
+			          					</div>
+			          					<div class="row">
+			          					<div class="col-sm-6">
+			          						<label>Priority 2 :</label>
+			          					</div>
+			          					<div class="col-sm-6">
+			          						<select name="choice1">
+											    <option value="Computer Science">Computer Science</option>
+											    <option value="Information Technology">Information Technology</option>
+											    <option value="Electronics and Communications">Electronics and Communications</option>
+											    <option value="Electrical and Electronics">Electrical and Electronics</option>
+											    <option value="Mechanical Engineering">Mechanical Engineering</option>
+											    <option value="Civil Engineering">Civil Engineering</option>
+											</select>
+			          					</div>
+			          					</div>
+			          					<div class="row">
+			          					<div class="col-sm-6">
+			          						<label>Priority 3 :</label>
+			          					</div>
+			          					<div class="col-sm-6">
+			          						<select name="choice1">
+											    <option value="Computer Science">Computer Science</option>
+											    <option value="Information Technology">Information Technology</option>
+											    <option value="Electronics and Communications">Electronics and Communications</option>
+											    <option value="Electrical and Electronics">Electrical and Electronics</option>
+											    <option value="Mechanical Engineering">Mechanical Engineering</option>
+											    <option value="Civil Engineering">Civil Engineering</option>
+											</select>
+			          					</div>
+			          					</div>
+			          					<div class="row">
+			          					<div class="col-sm-6">
+			          						<label>Priority 4 :</label>
+			          					</div>
+			          					<div class="col-sm-6">
+			          						<select name="choice1">
+											    <option value="Computer Science">Computer Science</option>
+											    <option value="Information Technology">Information Technology</option>
+											    <option value="Electronics and Communications">Electronics and Communications</option>
+											    <option value="Electrical and Electronics">Electrical and Electronics</option>
+											    <option value="Mechanical Engineering">Mechanical Engineering</option>
+											    <option value="Civil Engineering">Civil Engineering</option>
+											</select>
+			          					</div>
+			          					</div>
+
+			          					<div class="buttonBody">
+			          						<div class="prevButton">
+			          							<button type="button" id="prevButtonID">Previous</button>
+			          						</div>
+			          						<div class="subButton">
+			          							<button type="button" id="subButtonID">Submit</button>
+			          						</div>
+			          					</div>
+
+			          				</form>
+			          			</div>
+							</div>
+			     	        <div class="tab-pane" id="4b">
+								<div class="resultTitle">
+									<h4>Choice Filling Result :</h4>
+								</div>
+								<div class="resultBody">
+									<h5>The Result has not been declared yet.</h5>
+									<div class="resultDec row">
+										<div class="col-sm-4">
+											<h4 id="underLine">Branch Opted</h4>
+										</div>
+										<div class="col-sm-4">
+											<h4 id="underLine">Result</h4>
+										</div>
+										<div class="col-sm-4">
+											<h4 id="underLine">Date of Joining</h4>
+										</div>
+										<div class="col-sm-4">
+											<h4>Computer Science and Engineering</h4>
+										</div>
+										<div class="col-sm-4">
+											<h4>Yes</h4>
+										</div>
+										<div class="col-sm-4">
+											<h4>2nd August'18</h4>
+										</div>
+									</div>
+								</div>
+								<div class="nextButton">
+			          				<button type="submit" id="nextButtonID">Next</button>
+			          			</div>
+			          			<div class="prevButton">
+			          				<button type="submit" id="prevButtonID">Previous</button>
+			          			</div>
+							</div>
+							<div class="tab-pane" id="5b">
+			          			<div class="allot">
+			          				<div class="allotTitle">
+			          					<h3 style="text-decoration: underline;">Allotment Related</h3>
+			          					<h4>Branch : <strong>Computer Science and Engineering</strong></h4>
+			          				</div>
+			          				<div class="allotBody row">
+			          					<div class="col-sm-4">
+			          						<h4 id="underLine">Teachers</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4 id="underLine">Qualification</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4 id="underLine">Experience</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>abdkbsdk</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>asdasdd</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>fedfdce</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>sdafce</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>Exnce</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>dfarience</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>Edsfrience</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>Efasdfience</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>Expedfsace</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>Experifasdfe</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>Experiencdsfe</h4>
+			          					</div>
+			          					<div class="col-sm-4">
+			          						<h4>Expefdgsriefdsgce</h4>
+			          					</div>
+			          				</div>
+			          				<div class="finishButton">
+			          					<a href="admin.html">
+			          				<button type="submit" id="finishButtonID">Finish</button>
+		          						</a>
+			          			</div>
+			          			</div>
+							</div>
+						</div>
+			  </div>
+
+	</div>	
+	<div class="container-fluid "><div class="row footer bodyPart2">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<h4>Project Made by Pragyan Dalmia</h4>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	
+	$('.nextButton').click(function(){
+	 	
+  $('.nav-pills > .active').next('li').find('a').trigger('click');
+});
+	$('.subButton').click(function(){
+	 	
+  $('.nav-pills > .active').next('li').find('a').trigger('click');
+});
+	$('.prevButton').click(function(){
+  $('.nav-pills > .active').prev('li').find('a').trigger('click');
+});
+</script>
